@@ -60,6 +60,7 @@ export enum ChainId {
     RootStock = 30,
     MAP = 22776,
     NEON = 245022934,
+    Duck = 5545,
 
     // testnet
     Rinkeby = 4,
@@ -1477,6 +1478,26 @@ const initialChains: BaseChain[] = [
         scanName: 'Neon Mainnet Scan',
         vmType: 'EVM',
         rpcUrl: 'https://neon-proxy-mainnet.solana.p2p.org',
+    },
+    {
+        id: ChainId.Duck,
+        name: 'Duck',
+        tokenSymbol: 'TON',
+        token: {
+            symbol: 'TON',
+            decimal: 18,
+            address: '0x7F9308E8d724e724EC31395f3af52e0593BB2e3f',
+        },
+        wrappedTokenSymbol: 'WTON',
+        wrappedToken: {
+            symbol: 'WTON',
+            decimal: 18,
+            address: '0x7F9308E8d724e724EC31395f3af52e0593BB2e3f',
+        },
+        scanUrl: 'https://scan.duckchain.io/',
+        scanName: 'Duck Mainnet Scan',
+        vmType: 'EVM',
+        rpcUrl: 'https://rpc.duckchain.io',
     },
 ];
 
